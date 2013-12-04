@@ -57,11 +57,16 @@
             </div>
         
         <div data-role="footer" data-position="fixed">
-            <ul data-role="controlgroup" data-type="horizontal">
-                <li>Summary</li>
-                <li>Stocks</li>
-                <li>Funds</li>
-            </ul>
+           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+    <legend>Horizontal, mini sized:</legend>
+    <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+    <label for="radio-choice-h-6a">Stocks</label>
+    <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="off">
+    <label for="radio-choice-h-6b">Funds</label>
+    <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6c" value="other">
+    <label for="radio-choice-h-6c">Summary</label>
+</fieldset>
+
         </div>
         
         <script type="text/javascript" src="phonegap.js"></script>
