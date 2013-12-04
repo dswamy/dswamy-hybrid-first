@@ -43,6 +43,8 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        
+        $('#deviceready').hide();
 
         console.log('Received Event: ' + id);
     }
