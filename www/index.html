@@ -62,10 +62,14 @@
         
        <div data-role="footer" data-id="foo1" data-theme="d" data-position="fixed">
 		
-		 	<a href="#" data-role="button" data-mini="true" data-theme="c">Edit</a>
-	    		<a href="#" data-role="button" data-mini="true" data-theme="a">Cancel</a>
-	    		<a href="#" data-role="button" data-mini="true" data-theme="e" style="text-align:right">Refresh</a>
-		
+		     <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid">Edit</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active">Cancel</a></li>
+                <li><a href="#" data-icon="gear">Refresh</a></li>
+            </ul>
+        </div><!-- /navbar -->
+        
 	</div>
 
     </div>
