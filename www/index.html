@@ -35,29 +35,25 @@
         
         
         <div data-role="header" data-theme="c" data-fullscreen="true">
-            <a type="button" data-role="button" data-theme="b" data-icon="arrow-l" data-iconpos="left"> Summary </a>
+        
+		<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true">
+		 	<a href="#" data-role="button" data-theme="c">Stocks</a>
+	    		<a href="#" data-role="button" data-theme="c">Funds</a>
+	    		<a href="#" data-role="button" data-theme="c">Summary</a>
+		</div>
+
         </div>
         
         <div data-role="content">
-        	<table data-role="table" data-mode="reflow">
-        	
-        	<thead>
-        	<tr>
-        	 <th>Side</th><th>Symbol</th><th>Qty</th>
-                </tr>
-                </thead>
-                
-                <tbody>
-        	<tr>
-        	 <td>Buy</td><td>AAPL</td><td>1,000</td>
-                </tr>
-                
-                <tr>
-        	 <td>Sell</td><td>AZMN</td><td>200</td>
-                </tr>
-                </tbody>
-                
-        	</table>
+           	<ul data-role="listview">
+     		 <li>
+                		Buy AAPL 100
+            		</li>
+            
+            		<li>
+                		Sell AMZN 200 Limit 200
+            		</li>
+        	</ul>
         </div>
         
             <div id="deviceready" class="blink">
@@ -66,14 +62,14 @@
             </div>
         
        <div data-role="footer" data-id="foo1" data-theme="a" data-position="fixed">
-	<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true">
-    <a href="#" data-role="button" data-theme="c">Edit</a>
-    <a href="#" data-role="button" data-theme="c">Cancel</a>
-    <a href="#" data-role="button" data-theme="c">Refresh</a>
-</div>
-</div>
+		
+		 	<a href="#" data-role="button" data-theme="c">Edit</a>
+	    		<a href="#" data-role="button" data-theme="c">Cancel</a>
+	    		<a href="#" data-role="button" data-theme="c">Refresh</a>
+		
+	</div>
 
-        </div>
+    </div>
         
         <script type="text/javascript" src="phonegap.js"></script>
         
