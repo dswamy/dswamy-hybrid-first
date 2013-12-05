@@ -87,7 +87,7 @@ h1 {
     padding:2px 0px;
 }
 
-@media ( min-width: 25em ) {
+@media ( min-width: 15em ) {
 	/* Show the table header rows and set all cells to display: table-cell */
 	.my-custom-breakpoint td,
 	.my-custom-breakpoint th,
