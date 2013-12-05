@@ -27,6 +27,12 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        $(document).bind("mobileinit", function(){
+            //apply overrides here
+            console.log("jq mobile init called");
+            
+            $.mobile.allowCrossDomainPages= true; 
+        });
     },
     // deviceready Event Handler
     //
