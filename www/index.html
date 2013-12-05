@@ -41,7 +41,7 @@
 
         </div>
         
-        <div data-role="content">
+        <div data-role="content" style="padding:4px;">
            	
            	<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true" style="text-align:center;margin-bottom:20px;">
 		 	<a href="#" data-role="button" data-theme="b" data-mini="true">All Orders</a>
@@ -50,14 +50,42 @@
 		</div>
 		
            	<ul data-role="listview" data-theme="d">
-     		 <li>
-                		Buy AAPL 100
+     		 	<li>
+                		Buy AAPL 100 Market <a data-role="button" data-icon="edit"></a>
             		</li>
             
             		<li>
-                		Sell AMZN 200 Limit 200
+                		Sell AMZN 200 Limit 200 <a data-role="button" data-icon="edit"></a>
             		</li>
         	</ul>
+        	
+        	<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+     <thead>
+       <tr>
+         <th data-priority="2">Rank</th>
+         <th>Movie Title</th>
+         <th data-priority="3">Year</th>
+         <th data-priority="1"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+         <th data-priority="5">Reviews</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th>1</th>
+         <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+         <td>1941</td>
+         <td>100%</td>
+         <td>74</td>
+       </tr>
+       <tr>
+         <th>2</th>
+         <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+         <td>1942</td>
+         <td>97%</td>
+         <td>64</td>
+       </tr>
+       </table>
+       
         </div>
         
         
