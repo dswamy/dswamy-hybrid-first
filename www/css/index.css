@@ -97,6 +97,8 @@ h1 {
 	.my-custom-breakpoint thead th {
 		display: table-cell;
 		margin: 0;
+        vertical-align:middle;
+        
 	}
 	/* Hide the labels in each cell */
 	.my-custom-breakpoint td .ui-table-cell-label,

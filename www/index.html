@@ -87,7 +87,7 @@
         	 <div data-role="header" data-theme="c" data-fullscreen="true">
                  <h1>Order Status</h1>
                  
-                 	<a href="#" data-icon="home" data-rel="back" data-theme="a" >Home</a>
+                 	<a href="#" data-icon="home" data-rel="back"  >Home</a>
 	
             </div>
             
@@ -99,28 +99,34 @@
                             <a href="#" data-role="button" data-theme="c" data-mini="true">Filled</a>
                      </div>
                   	
-                    <table data-role="table" id="table-column-toggle"  class=" table-stroke my-custom-breakpoint">
+                    <table data-role="table" id="table-column-toggle" 
+                           class=" table-stroke my-custom-breakpoint" style="vertical-align:middle">
              <thead>
                <tr>
+                   <th></th>
                  <th data-priority="2">Side</th>
                  <th>Symbol</th>
                  <th data-priority="3">Qty</th>
                  <th data-priority="1">Status</th>
-               
+               <th></th>
                </tr>
              </thead>
              <tbody>
                <tr>
-                 <th>Buy</th>
+                   <td><a data-role="button" data-icon="edit" data-iconpos="notext">Edit</a></td>
+                 <td>Buy</td>
                  <td><a href="http://google.com" data-rel="external">AAPL</a></td>
                  <td>100</td>
                  <td>Open</td>
+                   <td><a data-role="button" data-icon="delete" data-iconpos="notext">Del</a></td>
                </tr>
                <tr>
-                 <th>Sell</th>
+                   <td><a data-role="button" data-icon="edit" data-iconpos="notext">Edit</a></td>
+                 <td>Sell</td>
                  <td><a href="http://yahoo.com" data-rel="external">GOOG</a></td>
                  <td>50</td>
                  <td>Filled</td>
+                   <td><a data-role="button" data-icon="delete" data-iconpos="notext">Del</a></td>
                 </tr>
                </table>
                
@@ -130,11 +136,7 @@
             <div data-role="footer" data-theme="d" data-position="fixed">
                 
                 <h1>
-            
-                    <div class="ui-grid-f">
-                        <div class="ui-block-a"> <a data-role="button">Modify</a> </div>
-                        <div class="ui-block-c"> <a data-role="button">Cancel</a> </div>
-                    </div>
+                   <a data-role="button" class="ui-btn-right">Go to Positions</a> 
                 </h1>
             </div>
         </div>
