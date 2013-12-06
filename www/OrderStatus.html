@@ -1,0 +1,58 @@
+<div data-role="page" id="OrderSummary">
+        	
+        	 <div data-role="header" data-theme="c" data-fullscreen="true">
+                 <h1>Order Status</h1>
+                 
+                 	<a href="#" data-icon="home" data-rel="back"  >Home</a>
+	
+            </div>
+            
+        	<div data-role="content">
+            
+                 	<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true" style="text-align:center;margin-bottom:20px;">
+                        <a href="#" data-role="button" data-theme="c" class="ui-btn-active" data-mini="true">All Orders</a>
+                            <a href="#" data-role="button" data-theme="c" data-mini="true">Open</a>
+                            <a href="#" data-role="button" data-theme="c" data-mini="true">Filled</a>
+                     </div>
+                  	
+                    <table data-role="table" id="table-column-toggle" 
+                           class=" table-stroke my-custom-breakpoint" style="vertical-align:middle">
+             <thead>
+               <tr>
+                   <th></th>
+                 <th data-priority="2">Side</th>
+                 <th>Symbol</th>
+                 <th data-priority="3">Qty</th>
+                 <th data-priority="1">Status</th>
+               <th></th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                   <td><a data-role="button" data-icon="edit" data-iconpos="notext">Edit</a></td>
+                 <td>Buy</td>
+                 <td><a href="http://google.com" data-rel="external">AAPL</a></td>
+                 <td>100</td>
+                 <td>Open</td>
+                   <td><a data-role="button" data-icon="delete" data-iconpos="notext">Del</a></td>
+               </tr>
+               <tr>
+                   <td><a data-role="button" data-icon="edit" data-iconpos="notext">Edit</a></td>
+                 <td>Sell</td>
+                 <td><a href="http://yahoo.com" data-rel="external">GOOG</a></td>
+                 <td>50</td>
+                 <td>Filled</td>
+                   <td><a data-role="button" data-icon="delete" data-iconpos="notext">Del</a></td>
+                </tr>
+               </table>
+               
+
+            </div>
+        	
+            <div data-role="footer" data-theme="d" data-position="fixed">
+                
+                <h1>
+                   <a data-role="button" class="ui-btn-right">Go to Positions</a> 
+                </h1>
+            </div>
+        </div>
