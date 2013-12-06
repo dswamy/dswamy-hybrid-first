@@ -27,15 +27,16 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
      
-        <script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
         
         <script type="text/javascript">
-        $(document).on("mobileinit", function(){
-            //apply overrides here
-            console.log("jq mobile init called");
-            
-            $.mobile.allowCrossDomainPages= true; 
-        });
+            $(document).on("mobileinit", function(){
+                //apply overrides here
+                console.log("jq mobile init called");
+                
+                $.mobile.allowCrossDomainPages= true; 
+                $.support.cors= true;
+            });
             
         </script>
         <script type="text/javascript" src="js/lib/jquery.mobile-1.3.2.min.js"></script>
@@ -48,64 +49,21 @@
         
         <div data-role="header" data-theme="c" data-fullscreen="true">
         
-        	<a href="#" data-icon="home" data-theme="a" style="text-align:right">Main Menu</a>
-		<h1 data-theme="d">Order Status</h1>
+        	<h1 data-theme="d">Trading</h1>
 
         </div>
         
         <div data-role="content" style="padding:4px;">
            	
-           	<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true" style="text-align:center;margin-bottom:20px;">
-		 	<a href="#" data-role="button" data-theme="c" class="ui-btn-active" data-mini="true">All Orders</a>
-	    		<a href="#" data-role="button" data-theme="c" data-mini="true">Open</a>
-	    		<a href="#" data-role="button" data-theme="c" data-mini="true">Filled</a>
-		</div>
+          
 		
 		<ul data-role="listview" data-inset="true">
-    			<li><a href="#Stock">Stocks</a></li>
+    			<li><a href="Stock.html">Stocks</a></li>
     			<li><a href="#">Funds</a></li>
     			<li><a href="#">Options</a></li>
-    			<li><a href="#">Order Status</a></li>
+    			<li><a href="#OrderSummary" data-transition="pop">Order Status</a></li>
 		</ul>
 
-
-		<!--
-           	<ul data-role="listview" data-theme="d">
-     		 	<li>
-                		Buy AAPL 100 Market 
-            		</li>
-            
-            		<li>
-                		Sell AMZN 200 Limit 200 
-            		</li>
-        	</ul>
-        	-->
-        	
-        	<table data-role="table" id="table-column-toggle"  class=" table-stroke my-custom-breakpoint">
-     <thead>
-       <tr>
-         <th data-priority="2">Side</th>
-         <th>Symbol</th>
-         <th data-priority="3">Qty</th>
-         <th data-priority="1">Status</th>
-       
-       </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <th>Buy</th>
-         <td><a href="http://google.com" data-rel="external">AAPL</a></td>
-         <td>100</td>
-         <td>Open</td>
-       </tr>
-       <tr>
-         <th>Sell</th>
-         <td><a href="http://yahoo.com" data-rel="external">GOOG</a></td>
-         <td>50</td>
-         <td>Filled</td>
-        </tr>
-       </table>
-       
         </div>
         
         
@@ -120,16 +78,65 @@
         </div><!-- /navbar -->
         
 	
-
+           </div>
+            
     </div>
         
-        <div data-role="page" id="Stock">
+        <div data-role="page" id="OrderSummary">
         	
-        	<div data-role="header">Header</div>
-        	<div data-role="content">Stock page</div>
-        	<div data-role="footer">Footer</div>
-        	Stock page
+        	 <div data-role="header" data-theme="c" data-fullscreen="true">
+                 <h1>Order Status</h1>
+                 
+                 	<a href="#" data-icon="home" data-theme="a" style="text-align:right">Main Menu</a>
+	
+            </div>
+            
+        	<div data-role="content">
+            
+                 	<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true" style="text-align:center;margin-bottom:20px;">
+                        <a href="#" data-role="button" data-theme="c" class="ui-btn-active" data-mini="true">All Orders</a>
+                            <a href="#" data-role="button" data-theme="c" data-mini="true">Open</a>
+                            <a href="#" data-role="button" data-theme="c" data-mini="true">Filled</a>
+                     </div>
+                  	
+                    <table data-role="table" id="table-column-toggle"  class=" table-stroke my-custom-breakpoint">
+             <thead>
+               <tr>
+                 <th data-priority="2">Side</th>
+                 <th>Symbol</th>
+                 <th data-priority="3">Qty</th>
+                 <th data-priority="1">Status</th>
+               
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th>Buy</th>
+                 <td><a href="http://google.com" data-rel="external">AAPL</a></td>
+                 <td>100</td>
+                 <td>Open</td>
+               </tr>
+               <tr>
+                 <th>Sell</th>
+                 <td><a href="http://yahoo.com" data-rel="external">GOOG</a></td>
+                 <td>50</td>
+                 <td>Filled</td>
+                </tr>
+               </table>
+               
+
+            </div>
         	
+            <div data-role="footer" data-theme="d" data-position="fixed">
+                
+                <h1>
+            
+                    <div class="ui-grid-f">
+                        <div class="ui-block-a"> <a data-role="button">Modify</a> </div>
+                        <div class="ui-block-c"> <a data-role="button">Cancel</a> </div>
+                    </div>
+                </h1>
+            </div>
         </div>
         
         <script type="text/javascript" src="phonegap.js"></script>
