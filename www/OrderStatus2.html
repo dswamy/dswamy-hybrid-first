@@ -1,0 +1,71 @@
+<div data-role="page" id="OrderSummary">
+        	
+        	 <div data-role="header" data-theme="c" data-fullscreen="true">
+                 <h1>Order Status</h1>
+                 
+                 	<a href="#" data-icon="home" data-rel="back"  >Trade</a>
+	
+            </div>
+            
+        	<div data-role="content">
+            
+                
+                <fieldset data-role="controlgroup" data-mini="true" data-type="horizontal" style="text-align:center;margin-bottom:20px;">
+                    
+                        <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                        <label for="radio-choice-1">All Orders</label>
+                
+                        <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                        <label for="radio-choice-2">Open</label>
+                
+                        <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                        <label for="radio-choice-3">Filled</label>
+                
+                </fieldset>
+                                
+                 
+                <ul data-role="listview" data-split-icon="edit" data-filter="true" style="margin-top:15px;">
+                    <li><a>
+                            <div class="ui-grid-a">                        
+                                <h3 class="ui-block-a ui-li-heading">Buy 100 AAPL Limit $550</h3>
+                                <span class="ui-li-desc ui-block-b" 
+                                      style="margin-top:15px;text-align:right">Open</span>    
+                            </div>
+                        </a>
+                        <a>Edit</a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <div class="ui-grid-a">                        
+                                <h3 class="ui-block-a ui-li-heading">Sell 20 AMZN Market</h3>
+                                <span class="ui-li-desc ui-block-b" 
+                                      style="margin-top:15px;text-align:right">Filled</span>    
+                            </div>
+                        </a>
+                        <a>Edit</a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <div class="ui-grid-a">                        
+                                <h3 class="ui-block-a ui-li-heading">Exchange MVCAX 100 to EANAX</h3>
+                                <span class="ui-li-desc ui-block-b" 
+                                      style="margin-top:15px;text-align:right">Open</span>    
+                            </div>
+                        </a>
+                        <a>Edit</a>
+                    </li>
+                    
+                </ul>
+       
+
+            </div>
+        	
+            <div data-role="footer" data-theme="d" data-position="fixed">
+                
+                <h1>
+                   <a data-role="button" data-theme="b" class="ui-btn-right">Go to Positions</a> 
+                </h1>
+            </div>
+        </div>
