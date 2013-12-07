@@ -9,13 +9,23 @@
             
         	<div data-role="content">
             
-                 	<div data-role="controlgroup"  data-type="horizontal" data-fullscreen="true" style="text-align:center;margin-bottom:20px;">
-                        <a href="#" data-role="button" data-theme="c" class="ui-btn-active" data-mini="true">All Orders</a>
-                            <a href="#" data-role="button" data-theme="c" data-mini="true">Open</a>
-                            <a href="#" data-role="button" data-theme="c" data-mini="true">Filled</a>
-                     </div>
+                
+                <fieldset data-role="controlgroup" data-mini="true" data-type="horizontal" style="text-align:center;margin-bottom:20px;">
+                    
+                        <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                        <label for="radio-choice-1">All Orders</label>
+                
+                        <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                        <label for="radio-choice-2">Open</label>
+                
+                        <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                        <label for="radio-choice-3">Filled</label>
+                
+                </fieldset>
+                                
+                 
                   	
-                    <table data-role="table" id="table-column-toggle" 
+         <table data-role="table" id="table-column-toggle" 
                            class=" table-stroke my-custom-breakpoint" style="vertical-align:middle">
              <thead>
                <tr>
