@@ -61,8 +61,19 @@
         	
             <div data-role="footer" data-theme="d" data-position="fixed">
                 
-                <h1>
+                <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="slideup" data-icon="gear" data-theme="e">Actions...</a>
+                    <div data-role="popup" id="popupMenu" data-theme="d">
+                            <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+                                <li data-role="divider" data-theme="e">Choose an action</li>
+                                <li><a href="#">View details</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#">Disable</a></li>
+                                <li><a href="#">Delete</a></li>
+                            </ul>
+                    </div>
+                
+                
                    <a data-role="button" class="ui-btn-right">Go to Positions</a> 
-                </h1>
+                
             </div>
         </div>
