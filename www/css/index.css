@@ -123,3 +123,10 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+/*
+.ui-mobile .ui-bar-c {
+    background:#ff0000;  
+    color:#fff;
+}
+*/
