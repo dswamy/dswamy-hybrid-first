@@ -1,10 +1,20 @@
 <div data-role="page" id="OrderSummary">
         	
         	 <div data-role="header" data-theme="c" data-fullscreen="true">
-                 <h1>Order Status</h1>
+                 <h1>Trading</h1>
                  
-                 	<a href="#" data-icon="home" data-rel="back"  >Trade</a>
+                 	<a href="index.html" data-icon="home" data-theme="a" >Home</a>
 	
+                  <div data-role="navbar" >
+                    <ul  >
+                            <li><a href="Stock.html" data-theme="a"  >Stocks</a></li>
+                            <li><a href="#" data-theme="a">Funds</a></li>
+                            <li><a href="#" data-theme="a">Options</a></li>
+                            <li><a href="OrderStatus.html" data-theme="a" data-transition="pop" class="ui-btn-active">Order Status</a></li>
+                            <li><a href="OrderStatus2.html" data-theme="a" data-transition="pop">Order Status2</a></li>
+                    </ul>
+                </div>
+                 
             </div>
             
         	<div data-role="content">
@@ -25,52 +35,53 @@
                                 
                  
                   	
-         <table data-role="table" id="table-column-toggle" 
-                           class=" table-stroke my-custom-breakpoint" style="vertical-align:middle">
-             <thead>
-               <tr>
-                   <th></th>
-                 <th data-priority="2">Side</th>
-                 <th>Symbol</th>
-                 <th data-priority="3">Qty</th>
-                 <th data-priority="1">Status</th>
-               <th></th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                   <td><a data-role="button" data-icon="edit" data-iconpos="notext">Edit</a></td>
-                 <td>Buy</td>
-                 <td><a href="http://google.com" data-rel="external">AAPL</a></td>
-                 <td>100</td>
-                 <td>Open</td>
-                   <td><a data-role="button" data-icon="delete" data-iconpos="notext">Del</a></td>
-               </tr>
-               <tr>
-                   <td><a data-role="button" data-icon="edit" data-iconpos="notext">Edit</a></td>
-                 <td>Sell</td>
-                 <td><a href="http://yahoo.com" data-rel="external">GOOG</a></td>
-                 <td>50</td>
-                 <td>Filled</td>
-                   <td><a data-role="button" data-icon="delete" data-iconpos="notext">Del</a></td>
-                </tr>
-               </table>
-               
-
-            </div>
-        	
-            <div data-role="footer" data-theme="d" data-position="fixed">
-                
-                <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="slideup" data-icon="gear" data-theme="e">Actions...</a>
+             <table data-role="none" cellspacing="0" id="table-column-toggle" 
+                               class="osw-table" style="vertical-align:middle;border:1px solid #bbb;width:100%">
+                 <thead>
+                   <tr>                
+                     <th data-priority="2"> <div style="background:#336699;padding:10px;color:#fff;font-weight:normal">Side</div> </th>
+                     <th> <div style="background:#336699;padding:10px;color:#fff;font-weight:normal">Symbol</div> </th>
+                     <th data-priority="3"><div style="background:#336699;padding:10px;color:#fff;font-weight:normal">Qty</div></th>
+                     <th data-priority="1"><div style="background:#336699;padding:10px;color:#fff;font-weight:normal">Status</div></th>
+                   <th> <div style="background:#336699;padding:10px;color:#fff;font-weight:normal">Actions</div> </th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                       
+                     <td>Buy</td>
+                     <td><a href="http://google.com" data-rel="external">AAPL</a></td>
+                     <td>100</td>
+                     <td>Open</td>
+                      <td> <a href="#popupMenu" data-rel="popup" data-role="button" data-mini="true" 
+                              data-inline="true" data-transition="slideup" data-icon="gear" data-theme="e">Actions...</a></td>
+                   </tr>
+                   <tr>
+                       
+                     <td>Sell</td>
+                     <td><a href="http://yahoo.com" data-rel="external">GOOG</a></td>
+                     <td>50</td>
+                     <td>Filled</td>
+                       <td><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true"
+                              data-transition="slideup" data-icon="gear" data-mini="true" data-theme="e">Actions...</a></td>
+                    </tr>
+            </table>
+            
                     <div data-role="popup" id="popupMenu" data-theme="d">
                             <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
                                 <li data-role="divider" data-theme="e">Choose an action</li>
                                 <li><a href="#">View details</a></li>
                                 <li><a href="#">Edit</a></li>
-                                <li><a href="#">Disable</a></li>
-                                <li><a href="#">Delete</a></li>
+                                <li><a href="#">Cancel</a></li>
                             </ul>
                     </div>
+
+            </div>
+        	
+            <div data-role="footer" data-theme="d" data-position="fixed">
+                
+                
+                    
                 
                 
                    <a data-role="button" class="ui-btn-right">Go to Positions</a> 

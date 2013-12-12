@@ -1,7 +1,9 @@
-  <div data-role="page" data-add-back-btn="true">
+  <div data-role="page" >
         
             <div data-role="header" data-theme="c" >
-            
+
+                   <a href="index.html" data-icon="home" data-theme="a" data-transition="flip">Home</a>
+             
                 <h1 data-theme="d">Portfolio</h1>
     
             </div>
@@ -22,13 +24,19 @@
             
            <div data-role="footer" data-id="foo1" data-theme="d" data-position="fixed">
             
-                 <div data-role="navbar">
-                    <ul>
-                        <li><a href="Portfolio.html" data-icon="grid" data-iconpos="left">Portfolio</a></li>
-                        <li><a href="Trade.html" data-icon="star" data-iconpos="left" class="ui-btn-active">Trade</a></li>
-                        <li><a href="#" data-icon="gear" data-iconpos="left">Operate</a></li>
-                    </ul>
-                </div><!-- /navbar -->
+                 <div data-role="controlgroup" data-type="horizontal"  data-iconpos="top" style="text-align:center; font-size:10px;">
+                     
+                    <a href="Portfolio.html" data-icon="grid" data-iconpos="top"  data-role="button" data-mini="true"  
+                       data-inline="true" style="width:100px" class="ui-btn-active" data-theme="a">Portfolio</a>
+                    
+                     <a href="Trade.html" data-inline="true" data-iconpos="top"  data-mini="true" data-icon="star" data-role="button" 
+                         data-theme="a" style="width:100px">Trade</a>
+                     
+                     <a href="#"  data-mini="true" data-role="button" data-iconpos="top"  data-inline="true" 
+                        data-icon="gear" data-theme="a" style="width:100px;padding:0;font-size:8px;">Operate</a>
+                    
+                </div>
+               <!-- /navbar -->
             
         
             </div>
