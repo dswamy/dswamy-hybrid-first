@@ -6,7 +6,7 @@
         id        = "CY7UE78VCV.hello-world"
         version   = "1.0.0">
 
-    <name>Deepak PhoneAppTest</name>
+    <name>CWM PhoneApp DS</name>
 
     <description>
         Hello World sample application that responds to the deviceready event.
